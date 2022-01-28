@@ -1,17 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="bg-purple-500">
-      <header></header>
-      <body>
-        <h1 className="text-white text-3xl font-bold underline ">
-          Hello world!
-        </h1>
-        <button class="btn btn-primary">daisyUI Button</button>
-      </body>
-    </div>
+    <Router>
+      <div className="flex flex-col justify-between h-screen">
+        <Navbar />
+        <main className="bg-purple-500">Content</main>
+      </div>
+    </Router>
   );
 }
 
