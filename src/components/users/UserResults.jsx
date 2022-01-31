@@ -8,7 +8,6 @@ function UserResults() {
 
   useEffect(() => {
     fetchUsers();
-    console.log(users);
   }, []);
 
   if (!loading) {
